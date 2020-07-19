@@ -1,0 +1,91 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Liga de beisbol</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="styleLogin.css" rel="stylesheet" type="text/css" />
+    <!-- /custom style sheet -->
+  
+    <!-- google fonts-->
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <!-- /google fonts-->
+
+</head>
+
+
+<body>
+    <h1  class=" color">BIENVENIDOS A LA LIGA DE BEISBOL LAVIEJA</h1>
+
+    <div class=" w3l-login-form">
+
+        <h2>Inicio Sesión</h2>
+
+        <form action="#" method="POST">
+
+            <div id="login_div" class=" w3l-form-group">
+                <label>Correo:</label>
+                <div class="group">
+                    <i class="fas fa-user"></i>
+                    <input type="text"id="email_field" class="form-control" placeholder="Correo.." required="required" />
+                </div>
+           
+            <div  class=" w3l-form-group">
+                <label>Contraseña:</label>
+                <div class="group">
+                    <i class="fas fa-unlock"></i>
+                    <input type="password" id= "password_field" class="form-control" placeholder="Constraseña" required="required" />
+                </div>
+            </div>
+
+             <div class="forgot">
+                <a href="#">Olvidó la contraseña?</a>
+                <br><button type="button" class="btn btn-primary" onclick="login()" >Iniciar sesion</button></br>
+             </div>
+           
+        </form>
+    
+    </div>
+  
+
+  <div id="user_div" class="jumbotron">
+    <h4>Bienvenido</h4>
+    <p id="user_para">Has iniciado Sesión.</p>
+
+      <a href="principal.html">Click aqui..para empezar</a>
+   
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+   apiKey: "AIzaSyBX10HKew9VOAi6ky1yMLyIyersXbtV4Zk",
+    authDomain: "auditoria-2d1f4.firebaseapp.com",
+    databaseURL: "https://auditoria-2d1f4.firebaseio.com",
+    projectId: "auditoria-2d1f4",
+    storageBucket: "auditoria-2d1f4.appspot.com",
+    messagingSenderId: "332103403435",
+    appId: "1:332103403435:web:8f1c0fa508ec990749f4ee",
+    measurementId: "G-05Z9W0H9PE"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</html>
